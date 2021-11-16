@@ -1,0 +1,38 @@
+ Declare str1, alphastr : String
+        Declare count : Integer
+        Declare isalphabet : Boolean
+        Declare nextchar : Character
+
+        str1 ← ""
+        nextchar ← ""
+        alphastr ←" abcdefghijklmnopqrstuvwxyz "
+        count ← 0
+        isalphabet ← True
+
+       INPUT("Enter String: "),str1 
+        
+        str1 ← LOWER(str1)
+
+        For count ← 1 To Len(alphastr)
+
+            nextchar ← Mid(alphastr, count, 1)
+
+
+            If InStr(str1, nextchar) = 0
+            Then
+                isalphabet ← False
+            ElseIf InStr(str1, nextchar) ← 1
+            Then
+                isalphabet ← True
+            End If
+
+
+        Next
+        If isalphabet ← True 
+        Then
+            OUTPUT(" They are all the alphabets. ")
+        Else
+            OUTPUT(" They all are not the alphabets. ")
+
+        End If
+        
